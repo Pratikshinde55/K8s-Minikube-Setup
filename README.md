@@ -20,3 +20,11 @@ Note: The Cluster is creating is automatic by Minikube we just put our requireme
 2.  *Now Install Client side/ User side command that is **"kubectl"** for managing K8s Cluster:*
     - Search on Browser:-> "kubectl install" -> then click on "Install and Set Up kubectl on Windows"
     [kubectl-Download-cmd-Link](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/#install-kubectl-binary-on-windows-via-direct-download-or-curl)
+
+# Single-Node Cluster:
+Here i create Single-node culster that is means on single node Master & Worker Node work done.
+
+To Create Single-Node Culster using minikube command is:
+
+    minikube start
+
