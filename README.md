@@ -16,6 +16,7 @@ Note: The Cluster is creating is automatic by Minikube we just put our requireme
 ![Download-minikube](https://github.com/user-attachments/assets/676f0852-8c27-4780-aba7-5069338b9c69)
 
 - After Download Extract exe file then, add **"Path in System Environment variable"**.
+- Note: Install Oracle VirtualBox on Window [download-virtualBox-Link](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
 
 ## Now Install Client side/ User side command that is **"kubectl"** for managing K8s Cluster.
 - Search on Browser:-> "kubectl install" -> then click on "Install and Set Up kubectl on Windows"
