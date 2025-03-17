@@ -70,3 +70,14 @@ Here `--type=NodePort` is define give Public_IP & `--port=80` => This is port nu
 Here, We see all three pods are attached to the Load Balancer, If we Scale-out or Scale-in that will automatic upadte to Load Balancer Service
 ![See all details](https://github.com/user-attachments/assets/59709750-cdd0-4f5d-990e-3b8d615ba2cb)
 
+## Manual Scaling: [scale]
+
+    kubectl scale deployment myweb --replicas=3   
+    
+![scale-cmd](https://github.com/user-attachments/assets/3ecc1a0f-c6e5-41db-89f6-d8d4491bec91)
+
+
+# Multi-Node-Cluster:
+Now here create multi-node cluster using minikube.
+
+
