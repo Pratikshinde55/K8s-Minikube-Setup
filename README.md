@@ -58,6 +58,8 @@ Create service or expose our deployment app to outside world:
 
     kubectl expose deployment myweb --type=NodePort --port=80
 
+Print list of LB:
+
     kubectl get svc 
     kubectl get service
 
