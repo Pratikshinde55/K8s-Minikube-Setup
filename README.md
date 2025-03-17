@@ -37,21 +37,21 @@ To Create Single-Node Culster using minikube command is:
 
   ![Deployment](https://github.com/user-attachments/assets/7ed66fae-9733-4ef7-abe2-c80e0879ddaa)
 
-Use describe:
+- Use describe:
 
-    kubectl describe deployment myweb
+      kubectl describe deployment myweb
 
-Print list of Deployment & Pod:
+- Print list of Deployment & Pod:
 
-    kubectl get pods
-    kubectl get deployment
+      kubectl get pods
+      kubectl get deployment
 
-![get-cmd](https://github.com/user-attachments/assets/88dc8c0c-917d-4c97-8126-d43c31459b29)
+   ![get-cmd](https://github.com/user-attachments/assets/88dc8c0c-917d-4c97-8126-d43c31459b29)
 
-Get Full lenght information:
+- Get Full lenght information:
 
-    kubectl get pods myweb-b77b85fb9-bghs9  -o wide
-    kubectl get deployment myweb -o wide
+      kubectl get pods myweb-b77b85fb9-bghs9  -o wide
+      kubectl get deployment myweb -o wide
 
 ## Load Balancer: [expose]
 Create service or expose our deployment app to outside world:
