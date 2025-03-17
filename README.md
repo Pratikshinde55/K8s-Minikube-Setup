@@ -54,28 +54,28 @@ To Create Single-Node Culster using minikube command is:
       kubectl get deployment myweb -o wide
 
 ## Load Balancer: [expose]
-Create service or expose our deployment app to outside world:
+- Create service or expose our deployment app to outside world:
 
-    kubectl expose deployment myweb --type=NodePort --port=80
+      kubectl expose deployment myweb --type=NodePort --port=80
 
-Print list of LB:
+- Print list of LB:
 
-    kubectl get svc 
-    kubectl get service
+      kubectl get svc 
+      kubectl get service
 
-Here `--type=NodePort` is define give Public_IP & `--port=80` => This is port number of Container or If any app running inside pod/Container then give that port no for example Python-flask app port 5000.
+- **Note:** `--type=NodePort` is define give Public_IP & `--port=80` => This is port number of Container or If any app running inside pod/Container then give that port no for example Python-flask app port 5000.
       
-    kubectl describe svc myweb
+      kubectl describe svc myweb
 
-Here, We see all three pods are attached to the Load Balancer, If we Scale-out or Scale-in that will automatic upadte to Load Balancer Service
-![See all details](https://github.com/user-attachments/assets/59709750-cdd0-4f5d-990e-3b8d615ba2cb)
+- Here, We see all three pods are attached to the Load Balancer, If we Scale-out or Scale-in that will automatic upadte to Load Balancer Service
+  ![See all details](https://github.com/user-attachments/assets/59709750-cdd0-4f5d-990e-3b8d615ba2cb)
 
 ## Manual Scaling: [scale]
+- Command for manual scale:
 
     kubectl scale deployment myweb --replicas=3   
     
-![scale-cmd](https://github.com/user-attachments/assets/3ecc1a0f-c6e5-41db-89f6-d8d4491bec91)
-
+  ![scale-cmd](https://github.com/user-attachments/assets/3ecc1a0f-c6e5-41db-89f6-d8d4491bec91)
 
 # Multi-Node-Cluster:
 Now here create multi-node cluster using minikube.
