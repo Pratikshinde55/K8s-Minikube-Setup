@@ -50,16 +50,21 @@ Print list of Deployment & Pod:
 
 Get Full lenght information:
 
-     kubectl get pods myweb-b77b85fb9-bghs9  -o wide
-     kubectl get deployment myweb -o wide
+    kubectl get pods myweb-b77b85fb9-bghs9  -o wide
+    kubectl get deployment myweb -o wide
 
 ## Load Balancer: [expose]
 Create service or expose our deployment app to outside world:
 
-      kubectl expose deployment myweb --type=NodePort --port=80
+    kubectl expose deployment myweb --type=NodePort --port=80
+
+    kubectl get svc 
+    kubectl get service
 
 Here `--type=NodePort` is define give Public_IP & `--port=80` => This is port number of Container or If any app running inside pod/Container then give that port no for example Python-flask app port 5000.
+      
+    kubectl describe svc myweb
 
-
-     
+Here, We see all three pods are attached to the Load Balancer, If we Scale-out or Scale-in that will automatic upadte to Load Balancer Service
+![See all details](https://github.com/user-attachments/assets/59709750-cdd0-4f5d-990e-3b8d615ba2cb)
 
