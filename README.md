@@ -31,9 +31,9 @@ To Create Single-Node Culster using minikube command is:
     minikube start
 
 ## Deployment:
-Now create deployment using image:
+- Now create deployment using image:
 
-    kubectl create deployment myweb --image=pratikshinde55/apache-webserver:v1
+      kubectl create deployment myweb --image=pratikshinde55/apache-webserver:v1
 
 ![Deployment](https://github.com/user-attachments/assets/7ed66fae-9733-4ef7-abe2-c80e0879ddaa)
 
