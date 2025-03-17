@@ -73,7 +73,7 @@ To Create Single-Node Culster using minikube command is:
 ## Manual Scaling: [scale]
 - Command for manual scale:
 
-    kubectl scale deployment myweb --replicas=3   
+      kubectl scale deployment myweb --replicas=3   
     
   ![scale-cmd](https://github.com/user-attachments/assets/3ecc1a0f-c6e5-41db-89f6-d8d4491bec91)
 
