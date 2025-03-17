@@ -1,4 +1,3 @@
-
 **There are many ways to create K8s cluster:**
 1. EKS
 2. AKS
@@ -77,11 +76,17 @@ To Create Single-Node Culster using minikube command is:
     
   ![scale-cmd](https://github.com/user-attachments/assets/3ecc1a0f-c6e5-41db-89f6-d8d4491bec91)
 
+## delete all:
+- delete command:
+
+      kubectl delete all -all
+
 ## Delete minikube single-node cluster:
 
      minikube delete
 - **Note:** After deleted cluster then Go to windows file manager then go to C:\ then -> Users -> ownuser -> `.minikube` then delete this minikube file
 # Multi-Node-Cluster:
 Now here create multi-node cluster using minikube.
+
 
 
