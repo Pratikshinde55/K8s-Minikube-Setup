@@ -85,8 +85,30 @@ To Create Single-Node Culster using minikube command is:
 
      minikube delete
 - **Note:** After deleted cluster then Go to windows file manager then go to C:\ then -> Users -> ownuser -> `.minikube` then delete this minikube file
+  
 # Multi-Node-Cluster:
 Now here create multi-node cluster using minikube.
+
+**Interact with Kubernetes:**
+1. CLI (Adhoc commands)
+2. Code (YAML - Yet Another Markup Language , Declarative Language)
+3. API
+
+Start Minikube Multi-node Cluster Command:
+
+     minikube start -n 3 -p pscluster2
+
+Basic Format of K8s yaml manifest file:
+
+    apiVersion:
+    kind:
+    metadata:
+       name:
+       labels:
+    spec:
+       containers:
+         - name: 
+           image: 
 
 
 
