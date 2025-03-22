@@ -129,15 +129,12 @@ Now here create multi-node cluster using minikube.
   
   ![Event](https://github.com/user-attachments/assets/705b1c75-5aa9-4dd7-8c51-dfabba52018b)
 
-- Show all types resources:
-
-       kubectl api-resources
-
 ## Replication Controller: [rc]
 - When we want to manage desired stage of pods with current stage of pods then we use Replication Controller K8s resource type.
+- `replicas` , `selector` , `template` are rc modules/attributes
 
-- While launching a pod using rc, we can give labels to pods, We also provides this pod labels to ReplicationController, So it helps to manage this pods with help of pods labels.
-
+- While launching a pod using rc, we can give labels to pods, We also provides this pod labels to ReplicationController,
+  So it helps to manage this pods with help of pods labels.
 - Check list of rc command:
 
        kubectl get rc
@@ -168,7 +165,39 @@ Now here create multi-node cluster using minikube.
   ![selector](https://github.com/user-attachments/assets/e72c836b-e0e3-41e5-bc1b-de130c8e1be0)
 
 - If we want scale the replicas then we have Three way, 1st is go to yaml offline file add desired replicas and use `kubectl apply` command ,
-   2nd use `kubectl scale rc myrc --replicas=5` command, & 3rd is `kubectl edit rc myrc` command.
+   2nd use `kubectl scale rc myrc --replicas=5` command, & 3rd is `kubectl edit rc myrc` command this gives online edit file to us we just add replicas there.
 
   ![online edit](https://github.com/user-attachments/assets/88886139-a5b5-4e08-a58c-9250606bad24)
 
+## Kubectl resorces type check and Explain 
+
+- Show all types resources:
+
+       kubectl api-resources
+
+  ![api-resources](https://github.com/user-attachments/assets/d49bb840-a2ae-4439-8011-beeec2795de8)
+
+- api versions list:
+
+       kubectl api-versions
+
+  ![api-versions](https://github.com/user-attachments/assets/960f34c0-c0fb-464b-8127-6990a2d1c5b3)
+
+- Kubectl explain command:
+
+       kubectl explain ReplicationController
+
+  ![explain-cmd](https://github.com/user-attachments/assets/b86acb82-1ea3-49c9-a2df-f0e9f0010711)
+
+- use explain cmd with option:
+    
+       kubectl explain ReplicationController.spec
+
+  ![explain with more](https://github.com/user-attachments/assets/0be31c70-eb00-4584-a86c-88462dbc8ee9)
+
+- more deep explain:
+
+       kubectl explain ReplicationController.spec.template
+
+  ![more-deep-explain](https://github.com/user-attachments/assets/d8cbc31f-8d95-497e-96c3-ab835c12793c)
+ 
