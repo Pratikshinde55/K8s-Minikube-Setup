@@ -94,11 +94,15 @@ Now here create multi-node cluster using minikube.
 2. Code (YAML - Yet Another Markup Language , Declarative Language)
 3. API
 
-Start Minikube Multi-node Cluster Command:
+**Start Minikube Multi-node Cluster Command:**
 
-     minikube start -n 3 -p pscluster2
+     minikube start -n 2 -p pscluster2
 
-Basic Format of K8s yaml manifest file:
+![Startind-status](https://github.com/user-attachments/assets/ce59b492-f1a5-4f7e-b366-57d187afa23e)
+
+![list-of nodes](https://github.com/user-attachments/assets/05fec64d-712a-4bd0-9da9-ef20de357504)
+
+**Basic Format of K8s yaml manifest file:** (Use .yml extention for code file)
 
     apiVersion:
     kind:
@@ -111,4 +115,11 @@ Basic Format of K8s yaml manifest file:
            image: 
 
 
+## Only Launch Pod with any Deployment or else:
 
+- Create file:
+  
+       notepad pod.yml
+
+- ![pod](https://github.com/user-attachments/assets/9f4304f1-4c86-4655-9bba-59d4657efe4f)
+- 
