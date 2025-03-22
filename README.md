@@ -115,13 +115,13 @@ Now here create multi-node cluster using minikube.
            image: 
 
 
-## Only Launch Pod with any Deployment or else:
+## Only Launch Pod without any Deployment or else:
 
 - Create file:
   
        notepad pod.yml
 
-   ![pod](https://github.com/user-attachments/assets/9f4304f1-4c86-4655-9bba-59d4657efe4f)
+  ![pod-file](https://github.com/user-attachments/assets/31bc7b76-cb74-45b8-acfd-80ce94e5f257)
 
 - Describe command:
 
@@ -129,4 +129,8 @@ Now here create multi-node cluster using minikube.
   
   ![Event](https://github.com/user-attachments/assets/705b1c75-5aa9-4dd7-8c51-dfabba52018b)
 
+- Show all types resources:
 
+       kubectl api-resources
+
+## 
