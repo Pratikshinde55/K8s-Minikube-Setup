@@ -121,5 +121,12 @@ Now here create multi-node cluster using minikube.
   
        notepad pod.yml
 
-- ![pod](https://github.com/user-attachments/assets/9f4304f1-4c86-4655-9bba-59d4657efe4f)
-- 
+   ![pod](https://github.com/user-attachments/assets/9f4304f1-4c86-4655-9bba-59d4657efe4f)
+
+- Describe command:
+
+       kubectl describe pods myonlypod
+  
+  ![Event](https://github.com/user-attachments/assets/705b1c75-5aa9-4dd7-8c51-dfabba52018b)
+
+
