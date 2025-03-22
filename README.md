@@ -167,4 +167,8 @@ Now here create multi-node cluster using minikube.
 
   ![selector](https://github.com/user-attachments/assets/e72c836b-e0e3-41e5-bc1b-de130c8e1be0)
 
-  
+- If we want scale the replicas then we have Three way, 1st is go to yaml offline file add desired replicas and use `kubectl apply` command ,
+   2nd use `kubectl scale rc myrc --replicas=5` command, & 3rd is `kubectl edit rc myrc` command.
+
+  ![online edit](https://github.com/user-attachments/assets/88886139-a5b5-4e08-a58c-9250606bad24)
+
