@@ -169,6 +169,10 @@ Now here create multi-node cluster using minikube.
 
   ![online edit](https://github.com/user-attachments/assets/88886139-a5b5-4e08-a58c-9250606bad24)
 
+- get all command show all resources lists which created till now:
+
+      kubectl get all
+  
 ## Kubectl resorces type check and Explain 
 
 - Show all types resources:
@@ -200,4 +204,15 @@ Now here create multi-node cluster using minikube.
        kubectl explain ReplicationController.spec.template
 
   ![more-deep-explain](https://github.com/user-attachments/assets/d8cbc31f-8d95-497e-96c3-ab835c12793c)
- 
+
+
+ # Minikube dashboard:
+ - This minikube dashboard command launch GUI dashboard of our cluster on browser:
+
+         minikube dashboard -p pscluster2
+
+   ![dashboard](https://github.com/user-attachments/assets/94a7d28c-7fb3-498b-b4cc-b7b853b4580a)
+
+ - On Browser:
+   ![GUI](https://github.com/user-attachments/assets/7fc09f08-ead0-413f-a50d-b6ea64d607fe)
+
