@@ -1,3 +1,5 @@
+![Kubernetes Set-up](https://github.com/user-attachments/assets/55cd5c46-d053-4234-af8f-0dc4172953f7)
+
 **There are many ways to create K8s cluster:**
 1. EKS
 2. AKS
