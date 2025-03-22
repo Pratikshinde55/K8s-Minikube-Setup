@@ -133,4 +133,38 @@ Now here create multi-node cluster using minikube.
 
        kubectl api-resources
 
-## 
+## Replication Controller: [rc]
+- When we want to manage desired stage of pods with current stage of pods then we use Replication Controller K8s resource type.
+
+- While launching a pod using rc, we can give labels to pods, We also provides this pod labels to ReplicationController, So it helps to manage this pods with help of pods labels.
+
+- Check list of rc command:
+
+       kubectl get rc
+
+- ReplicationController manifest file apply:
+
+       notepad rc.yml
+       kubectl create -f rc.yml
+  
+  ![rc-pic](https://github.com/user-attachments/assets/6ce5fe17-28ce-4ea6-8d52-150ae0805b0b)
+
+- Describe rc: ( rc --launch--> Pods )
+  
+       kubectl describe rc myrc
+  
+  ![describe-rc](https://github.com/user-attachments/assets/ecc485f6-040c-4efc-bc78-e472f839d747)
+    
+- show lables command:
+
+       kubectl get pods --show-labels
+  
+  ![show-labels](https://github.com/user-attachments/assets/a7ca666d-4942-4e74-9304-f250cd2db5ea)
+
+- selector with show labels:
+
+       kubectl get pods --selector team=prod --show-labels
+
+  ![selector](https://github.com/user-attachments/assets/e72c836b-e0e3-41e5-bc1b-de130c8e1be0)
+
+  
