@@ -209,10 +209,21 @@ Now here create multi-node cluster using minikube.
  # Minikube dashboard:
  - This minikube dashboard command launch GUI dashboard of our cluster on browser:
 
-         minikube dashboard -p pscluster2
+       minikube dashboard -p pscluster2
 
    ![dashboard](https://github.com/user-attachments/assets/94a7d28c-7fb3-498b-b4cc-b7b853b4580a)
 
  - On Browser:
    ![GUI](https://github.com/user-attachments/assets/7fc09f08-ead0-413f-a50d-b6ea64d607fe)
 
+## Delete all resources & delete cluster:
+
+- Delete all resources in one command:
+
+       kubectl delete all --all
+
+- Delete cluster:
+
+       minikube delete -p pscluster2
+
+![Delete-all](https://github.com/user-attachments/assets/db56b80d-a336-4079-be8b-6ce2186c064f)
