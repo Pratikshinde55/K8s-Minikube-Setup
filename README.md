@@ -69,7 +69,7 @@ To Create Single-Node Culster using minikube command is:
 - Here, We see all three pods are attached to the Load Balancer, If we Scale-out or Scale-in that will automatic upadte to Load Balancer Service
   ![See all details](https://github.com/user-attachments/assets/59709750-cdd0-4f5d-990e-3b8d615ba2cb)
 
-## Manual Scaling: [scale]
+## Manual Scaling- service: [scale]
 - Command for manual scale:
 
       kubectl scale deployment myweb --replicas=3   
