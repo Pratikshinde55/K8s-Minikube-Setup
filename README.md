@@ -31,7 +31,7 @@ To Create Single-Node Culster using minikube command is:
 
     minikube start
 
-## CLi Adhoc command:
+### CLi Adhoc command:
 **Create Deployment and svc using CLI adhoc commands:**
 
 - Now create deployment using image:
@@ -74,7 +74,7 @@ To Create Single-Node Culster using minikube command is:
 - Here, We see all three pods are attached to the Load Balancer, If we Scale-out or Scale-in that will automatic upadte to Load Balancer Service
   ![See all details](https://github.com/user-attachments/assets/59709750-cdd0-4f5d-990e-3b8d615ba2cb)
 
-## Manual Scaling using Adhoc command: [scale]
+### Manual Scaling using Adhoc command: [scale]
 - Command for manual scale:
 
       kubectl scale deployment myweb --replicas=3   
@@ -85,7 +85,7 @@ To Create Single-Node Culster using minikube command is:
 
       kubectl delete all -all
 
-## Delete minikube single-node cluster:
+### Delete minikube single-node cluster:
 
      minikube delete
      
