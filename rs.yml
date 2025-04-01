@@ -1,0 +1,20 @@
+## ReplicaSet YAML Code
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-rs1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      env: prod
+      auth: ps
+  template:
+    metadata:
+      labels:
+        env: prod
+        auth: ps
+    spec:
+      containers:
+        - name: "c1"
+          image: "pratikshinde55/apache-webserver"
