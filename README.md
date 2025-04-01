@@ -174,7 +174,15 @@ Now here create multi-node cluster using minikube.
 - get all command show all resources lists which created till now:
 
       kubectl get all
-  
+## Load Balancer: service [svc] (expose)
+- Load balancer distribute incomming application traffic across the multiple backend Pods is called as Load Balancer or Reverse proxy, But In Kubernetes it is known as **Sevice**, Short form is **svc**.
+
+- There are three types K8s service types:
+   1. ClusterIP (Private LB)
+   2. NodePort (Public LB)
+   3. LoadBalancer/ExternalName
+ 
+
 ## Kubectl resorces type check and Explain 
 
 - Show all types resources:
