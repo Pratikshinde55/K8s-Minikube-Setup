@@ -237,6 +237,7 @@ Now here create multi-node cluster using minikube.
 
   ![more-deep-explain](https://github.com/user-attachments/assets/d8cbc31f-8d95-497e-96c3-ab835c12793c)
 
+*** 
 
  # Minikube dashboard:
  - This minikube dashboard command launch GUI dashboard of our cluster on browser:
