@@ -2,6 +2,11 @@
 
 ## In This Project I Created following things:
 1. [Installation of Minikube & Kubectl on Window](#install-minikube)
+2. [create-Single-Node Cluster and use Adhoc cmds](#single-node-cluster)
+
+
+
+
 **There are many ways to create K8s cluster:**
 1. EKS
 2. AKS
@@ -28,7 +33,7 @@ Note: The Cluster is creating is automatic by Minikube we just put our requireme
 
 ***
 
-# Single-Node Cluster:
+# <a id="single-node-cluster"></a>Single-Node Cluster command:
 Here i create Single-node cluster that is means on single node Master & Worker Node work done.
 
 To Create Single-Node Culster using minikube command is:
