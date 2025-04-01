@@ -5,8 +5,11 @@
 2. [Create Single-Node Cluster and use Adhoc cmds](#single-node-cluster)
 3. [Create Multi-Node Cluster](#multi-node-cluster)
 4. [Kubernetes Resources YAML file](#k8s-resources)
+5. [Check and Explain K8s resources](#explain-cmd)
+6. [Minikube Dashboard](#dashboard)
 
 
+***
 
 **There are many ways to create K8s cluster:**
 1. EKS
@@ -232,7 +235,7 @@ Now here create multi-node cluster using minikube.
      ![NodePort](https://github.com/user-attachments/assets/ea7358f4-5e06-49d3-92c9-be8ad71bea6e)
      ![NodePort2](https://github.com/user-attachments/assets/39f494a0-6c1e-45c0-947b-0b39b22cf311)
 
-## Kubectl resorces type check and Explain 
+## <a id="explain-cmd"></a>Kubectl resorces type check and Explain 
 
 - Show all types resources:
 
@@ -266,7 +269,7 @@ Now here create multi-node cluster using minikube.
 
 *** 
 
- # Minikube dashboard:
+ # <a id="dashboard"></a>Minikube dashboard:
  - This minikube dashboard command launch GUI dashboard of our cluster on browser:
 
        minikube dashboard -p pscluster2
