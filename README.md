@@ -183,12 +183,12 @@ Now here create multi-node cluster using minikube.
    3. LoadBalancer/ExternalName
  
 1. ClusterIP:
-  -  This is **Private IP** Service, We know that all pods are isolated from outside world but they internally connected to each other, This type of service Load Balancer used for DataBase.
-  -  This is **default** type of Load Balancre of K8s.
-  -  This service don't allow outside world client to come inside, But they have **internally connectivity**.
-  -  **Labels & Selector** is very important to asssign the pods to the service.
+    -  This is **Private IP** Service, We know that all pods are isolated from outside world but they internally connected to each other, This type of service Load Balancer used for DataBase.
+    -  This is **default** type of Load Balancre of K8s.
+    -  This service don't allow outside world client to come inside, But they have **internally connectivity**.
+    -  **Labels & Selector** is very important to asssign the pods to the service.
 
- ![ClusterIP](https://github.com/user-attachments/assets/9032984f-a83b-488f-b90a-b42b0467770e)
+    ![ClusterIP](https://github.com/user-attachments/assets/9032984f-a83b-488f-b90a-b42b0467770e)
 
 ## Kubectl resorces type check and Explain 
 
