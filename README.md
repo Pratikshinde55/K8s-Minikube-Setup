@@ -31,7 +31,9 @@ To Create Single-Node Culster using minikube command is:
 
     minikube start
 
-## Deployment:
+## CLi Adhoc command:
+**Create Deployment and svc using CLI adhoc commands:**
+
 - Now create deployment using image:
 
       kubectl create deployment myweb --image=pratikshinde55/apache-webserver:v1
@@ -72,21 +74,21 @@ To Create Single-Node Culster using minikube command is:
 - Here, We see all three pods are attached to the Load Balancer, If we Scale-out or Scale-in that will automatic upadte to Load Balancer Service
   ![See all details](https://github.com/user-attachments/assets/59709750-cdd0-4f5d-990e-3b8d615ba2cb)
 
-## Manual Scaling- service: [scale]
+## Manual Scaling using Adhoc command: [scale]
 - Command for manual scale:
 
       kubectl scale deployment myweb --replicas=3   
     
   ![scale-cmd](https://github.com/user-attachments/assets/3ecc1a0f-c6e5-41db-89f6-d8d4491bec91)
 
-## delete all:
-- delete command:
+- delete command for delete all k8s resources:
 
       kubectl delete all -all
 
 ## Delete minikube single-node cluster:
 
      minikube delete
+     
 - **Note:** After deleted cluster then Go to windows file manager then go to C:\ then -> Users -> ownuser -> `.minikube` then delete this minikube file
   
 # Multi-Node-Cluster:
