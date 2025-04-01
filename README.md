@@ -1,5 +1,7 @@
 ![K8s-Minikube-Setup](https://github.com/user-attachments/assets/55cd5c46-d053-4234-af8f-0dc4172953f7)
 
+## In This Project I Created following things:
+1. [Installation of Minikube & Kubectl on Window](#install-minikube)
 **There are many ways to create K8s cluster:**
 1. EKS
 2. AKS
@@ -10,7 +12,7 @@
 Here I use Minikube for Multi-Node Cluster:
 Note: The Cluster is creating is automatic by Minikube we just put our requirement but this is not give fully customize option like Kubeadm.
 
-## Installation of Minikube & Kubectl on Window:
+## <a id="install-minikube"></a>Installation of Minikube & Kubectl on Window:
 1. *Minikube install on window:*
     - Search on Browser "kubernetes minikube install" and then Click on ->  'latest release' 
     [Minikube-Download-link](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+downloa)
