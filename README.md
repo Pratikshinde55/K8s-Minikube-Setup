@@ -54,7 +54,8 @@ To Create Single-Node Culster using minikube command is:
       kubectl get pods myweb-b77b85fb9-bghs9  -o wide
       kubectl get deployment myweb -o wide
 
-## Load Balancer: [expose]
+   **Load Balancer: [expose] for CLI way**
+
 - Create service or expose our deployment app to outside world:
 
       kubectl expose deployment myweb --type=NodePort --port=80
@@ -104,6 +105,9 @@ Now here create multi-node cluster using minikube.
 
 ![list-of nodes](https://github.com/user-attachments/assets/05fec64d-712a-4bd0-9da9-ef20de357504)
 
+
+# Resource Types in K8s:
+
 **Basic Format of K8s yaml manifest file:** (Use .yml extention for code file)
 
     apiVersion:
@@ -117,7 +121,7 @@ Now here create multi-node cluster using minikube.
            image: 
 
 
-## Only Launch Pod without any Deployment or else:
+## 1. Pod resource type (Only Launch Pod without any Deployment or else):
 
 - Create file:
   
@@ -131,7 +135,7 @@ Now here create multi-node cluster using minikube.
   
   ![Event](https://github.com/user-attachments/assets/705b1c75-5aa9-4dd7-8c51-dfabba52018b)
 
-## Replication Controller: [rc]
+## 2. Replication Controller resource type: [rc]
 - When we want to manage desired stage of pods with current stage of pods then we use Replication Controller K8s resource type.
 - `replicas` , `selector` , `template` are rc modules/attributes
 
@@ -174,7 +178,7 @@ Now here create multi-node cluster using minikube.
 - get all command show all resources lists which created till now:
 
       kubectl get all
-## Load Balancer: service [svc] (expose)
+## 3. Service resource type: Load Balancer [svc] (expose fot CLI)
 - Load balancer distribute incomming application traffic across the multiple backend Pods is called as Load Balancer or Reverse proxy, But In Kubernetes it is known as **Sevice**, Short form is **svc**.
 
 - There are three types K8s service types:
