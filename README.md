@@ -4,6 +4,7 @@
 1. [Installation of Minikube & Kubectl on Window](#install-minikube)
 2. [Create Single-Node Cluster and use Adhoc cmds](#single-node-cluster)
 3. [Create Multi-Node Cluster](#multi-node-cluster)
+4. [Kubernetes Resources YAML file](#k8s-resources)
 
 
 
@@ -119,7 +120,7 @@ Now here create multi-node cluster using minikube.
 ![list-of nodes](https://github.com/user-attachments/assets/05fec64d-712a-4bd0-9da9-ef20de357504)
 
 
-# Resource Types in K8s:
+# <a id="k8s-resources"></a>Resource Types in K8s:
 
 **Basic Format of K8s yaml manifest file:** (Use .yml extention for code file)
 
