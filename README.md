@@ -184,7 +184,22 @@ Now here create multi-node cluster using minikube.
 - get all command show all resources lists which created till now:
 
       kubectl get all
-## 3. Service resource type: Load Balancer [svc] (expose fot CLI)
+
+## 3. ReplicaSet resource type: [rs]
+- ReplicaSet support both equality-based selector & set-based selector.
+- When we want to manage desired stage of pods with current stage of pods then we use ReplicaSet K8s resource type
+- Replication Controller don't supprot set-based selector, So most of cases ReplicaSet is used.
+- In 99 % cases, In K8s ReplicaSet is used.
+
+        kubectl get rs
+
+  ![ReplicaSet-1](https://github.com/user-attachments/assets/aa624587-7a4f-4a13-ab9e-dd9ea3c76b58)
+
+        kubectl describe rs my-rs1
+
+  ![ReplicaSet-2](https://github.com/user-attachments/assets/84f21c17-e0d0-4567-8399-9cd0eee4ff12)
+
+## 4. Service resource type: Load Balancer [svc] (expose fot CLI)
 - Load balancer distribute incomming application traffic across the multiple backend Pods is called as Load Balancer or Reverse proxy, But In Kubernetes it is known as **Sevice**, Short form is **svc**.
 
 - There are three types K8s service types:
