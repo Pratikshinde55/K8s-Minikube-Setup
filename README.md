@@ -24,6 +24,8 @@ Note: The Cluster is creating is automatic by Minikube we just put our requireme
 
 - Note: If CLI show error then put both minikube & kubectl file in same folder of window. 
 
+***
+
 # Single-Node Cluster:
 Here i create Single-node cluster that is means on single node Master & Worker Node work done.
 
@@ -90,7 +92,9 @@ To Create Single-Node Culster using minikube command is:
      minikube delete
      
 - **Note:** After deleted cluster then Go to windows file manager then go to C:\ then -> Users -> ownuser -> `.minikube` then delete this minikube file
-  
+
+***
+
 # Multi-Node-Cluster:
 Now here create multi-node cluster using minikube.
 
