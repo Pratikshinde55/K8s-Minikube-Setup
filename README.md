@@ -190,6 +190,15 @@ Now here create multi-node cluster using minikube.
 
     ![ClusterIP](https://github.com/user-attachments/assets/9032984f-a83b-488f-b90a-b42b0467770e)
 
+2. NodePort:
+   - This is **Public Load Balancer** Service type.
+   - This allows outside world to connect to svc.
+   - Client connect the IP of Cluste and NodePort port number, Then NodePort divert to the svc port number, then svc port number divert to the targetPort number that is port number of Pod or app.
+   - NodePort able to allow outside connectivity because of **Kube-proxy**.
+
+     ![NodePort](https://github.com/user-attachments/assets/ea7358f4-5e06-49d3-92c9-be8ad71bea6e)
+     ![NodePort2](https://github.com/user-attachments/assets/39f494a0-6c1e-45c0-947b-0b39b22cf311)
+
 ## Kubectl resorces type check and Explain 
 
 - Show all types resources:
