@@ -2,8 +2,8 @@
 
 ## In This Project I Created following things:
 1. [Installation of Minikube & Kubectl on Window](#install-minikube)
-2. [create-Single-Node Cluster and use Adhoc cmds](#single-node-cluster)
-
+2. [Create Single-Node Cluster and use Adhoc cmds](#single-node-cluster)
+3. [Create Multi-Node Cluster](#multi-node-cluster)
 
 
 
@@ -102,7 +102,7 @@ To Create Single-Node Culster using minikube command is:
 
 ***
 
-# Multi-Node-Cluster:
+# <a id="multi-node-cluster"></a>Multi-Node-Cluster:
 Now here create multi-node cluster using minikube.
 
 **Interact with Kubernetes:**
