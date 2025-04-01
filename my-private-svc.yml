@@ -1,0 +1,13 @@
+## ClusterIP svc
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-private-svc
+spec:
+  type: ClusterIP
+  selector:
+    auth: ps
+    env: prod
+  ports:
+    - targetPort: 80
+      port: 1234
