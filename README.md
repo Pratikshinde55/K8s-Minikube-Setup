@@ -236,7 +236,12 @@ Now here create multi-node cluster using minikube.
      ![NodePort](https://github.com/user-attachments/assets/ea7358f4-5e06-49d3-92c9-be8ad71bea6e)
      ![NodePort2](https://github.com/user-attachments/assets/39f494a0-6c1e-45c0-947b-0b39b22cf311)
 
-## 5. <a id="k8s-secret"></a>Secret: Kubernetes secret Resource Type
+## 5. <a id="k8s-secret"></a>Secret: k8s Secret Resource Type
+- Create secret.yml file: (Created generic secret that is used as password for myqsl image)
+  ![secret-file](https://github.com/user-attachments/assets/5d3a3261-7cfc-44df-9b34-39d15d0fe9e1)
+
+- Now This secret we use by this way:(Here i use deployment resource type & pod launch by using MySQL image, so MySQL env pass by using secret)
+  ![mysql-secret-used](https://github.com/user-attachments/assets/894c579c-45e8-4bb1-91f0-ae50be71ee69)
 
 
 ## 6. <a id="explain-cmd"></a>Kubectl resorces type check and Explain 
